@@ -9,10 +9,11 @@ export const ButtonComp = ({ text, btnStyles, onClick }) => (
   </button>
 );
 
-export const Input = ({ placeholder, inputStyle, setValue }) => (
+export const Input = ({ placeholder, inputStyle, setValue, type }) => (
   <input
     className={`w-full h-11  bg-gray-200 rounded-md mb-3 px-3  focus:outline-none  focus:ring-1 focus:ring-sky-500 ${inputStyle}`}
     placeholder={placeholder}
     onChange={(val) => setValue(val.target.value)}
+    type={type}
   />
 );

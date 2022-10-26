@@ -5,17 +5,17 @@ import Navbar from "../../components/navbar/Navbar";
 import "./home.css";
 
 const Home = () => {
-	return (
-		<div className="">
-			<Navbar />
-			<div className="homeContainer mt-10 mb-10">
-				<div className="flex ">
-					<Filters />
-					<InternCard />
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="w-full">
+      <Navbar />
+      <div className="py-10 px-20">
+        <div className="flex justify-between w-full">
+          <Filters />
+          <InternCard />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
